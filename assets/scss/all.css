@@ -1,0 +1,1335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-primay {
+  color: #212529;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-muted {
+  color: #adb5bd;
+}
+
+.text-highlight {
+  color: #57a203;
+}
+
+.text-highlight-3 {
+  color: #c0fa73;
+}
+
+.text-danger {
+  color: #d74f4f;
+}
+
+.lh-12 {
+  line-height: 1.2;
+}
+
+.h1 {
+  line-height: 1.2;
+  font-size: 40px;
+}
+.h2 {
+  line-height: 1.2;
+  font-size: 32px;
+}
+.h3 {
+  line-height: 1.2;
+  font-size: 28px;
+}
+.h4 {
+  line-height: 1.2;
+  font-size: 24px;
+}
+.h5 {
+  line-height: 1.2;
+  font-size: 20px;
+}
+.h6 {
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+.fz-14 {
+  font-size: 14px;
+}
+.fz-20 {
+  font-size: 20px;
+}
+.fz-48 {
+  font-size: 48px;
+}
+.fz-64 {
+  font-size: 64px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.radius-sm {
+  border-radius: 4px;
+}
+.radius-md {
+  border-radius: 12px;
+}
+.radius-rounded {
+  border-radius: 1000px;
+}
+
+.mw-64 {
+  max-width: 64px;
+}
+.mw-120 {
+  max-width: 120px;
+}
+
+.w-33 {
+  width: 33%;
+}
+.w-66 {
+  width: 66%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.my-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.mt-64 {
+  margin-top: 64px;
+}
+
+.ml-4 {
+  margin-left: 4px;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.mr-32 {
+  margin-right: 32px;
+}
+.mr-40 {
+  margin-right: 40px;
+}
+.mr-48 {
+  margin-right: 48px;
+}
+.mr-64 {
+  margin-right: 64px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-21 {
+  margin-bottom: 21px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+.p-16 {
+  padding: 16px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+.pt-64 {
+  padding-top: 64px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+.pb-24 {
+  padding-bottom: 24px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+.pb-64 {
+  padding-bottom: 64px;
+}
+
+.pr-4 {
+  padding-right: 4px;
+}
+
+.pl-4 {
+  padding-left: 4px;
+}
+
+.py-4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.py-64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-i-b {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-f-w {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.t-0 {
+  top: 0;
+}
+
+@media (max-width: 1400px) {
+  .h-md5 {
+    line-height: 1.2;
+    font-size: 20px;
+  }
+  .d-md-contents {
+    display: contents;
+  }
+  .overflow-md-auto {
+    overflow-x: auto;
+  }
+  .overflow-md-hidden {
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  .h-sm1 {
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  .h-sm2 {
+    line-height: 1.2;
+    font-size: 32px;
+  }
+  .h-sm3 {
+    line-height: 1.2;
+    font-size: 28px;
+  }
+  .h-sm4 {
+    line-height: 1.2;
+    font-size: 24px;
+  }
+  .h-sm5 {
+    line-height: 1.2;
+    font-size: 20px;
+  }
+  .h-sm6 {
+    line-height: 1.2;
+    font-size: 16px;
+  }
+  .fz-sm-12 {
+    font-size: 12px;
+  }
+  .fz-sm-14 {
+    font-size: 14px;
+  }
+  .fz-sm-16 {
+    font-size: 16px;
+  }
+  .fz-sm-20 {
+    font-size: 20px;
+  }
+  .fz-sm-48 {
+    font-size: 48px;
+  }
+  .fz-sm-64 {
+    font-size: 64px;
+  }
+  .pb-sm-24 {
+    padding-bottom: 24px;
+  }
+  .py-sm-0 {
+    padding: 0 0;
+  }
+  .py-sm-12 {
+    padding: 12px 0;
+  }
+  .py-sm-32 {
+    padding: 32px 0;
+  }
+  .mt-sm-0 {
+    margin-top: 0px;
+  }
+  .mt-sm-8 {
+    margin-top: 8px;
+  }
+  .mt-sm-24 {
+    margin-top: 24px;
+  }
+  .mt-sm-64 {
+    margin-top: 64px;
+  }
+  .mb-sm-4 {
+    margin-bottom: 4px;
+  }
+  .mb-sm-8 {
+    margin-bottom: 8px;
+  }
+  .mb-sm-12 {
+    margin-bottom: 12px;
+  }
+  .mb-sm-16 {
+    margin-bottom: 16px;
+  }
+  .mb-sm-24 {
+    margin-bottom: 24px;
+  }
+  .mb-sm-32 {
+    margin-bottom: 32px;
+  }
+  .mb-sm-40 {
+    margin-bottom: 40px;
+  }
+  .mb-sm-64 {
+    margin-bottom: 64px;
+  }
+  .mr-sm-8 {
+    margin-right: 8px;
+  }
+  .ml-sm-0 {
+    margin-left: 0px;
+  }
+  .ml-sm-12 {
+    margin-left: 12px;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-contents {
+    display: contents;
+  }
+  .d-f-w-unset {
+    flex-wrap: wrap;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-3 {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-6 {
+  width: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-9 {
+  width: 75%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-12 {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.column-gap-8 {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.row-gap-8 {
+  row-gap: 8px;
+}
+
+.productdetails-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+
+.productdetails-col-1 {
+  width: 8.3333333333%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-2 {
+  width: 16.6666666667%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-3 {
+  width: 25%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-4 {
+  width: 33.3333333333%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-5 {
+  width: 41.6666666667%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-6 {
+  width: 50%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-7 {
+  width: 58.3333333333%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-8 {
+  width: 66.6666666667%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-9 {
+  width: 75%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-10 {
+  width: 83.3333333333%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-11 {
+  width: 91.6666666667%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.productdetails-col-12 {
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+}
+.container-story {
+  margin: 0 auto;
+  max-width: 1076px;
+  padding: 0 110px;
+}
+
+.banner {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 151px 0;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+.footer-bg {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 1400px) {
+  .column-md-gap-16 {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .col-sm-1 {
+    width: 8.3333333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-2 {
+    width: 16.6666666667%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-4 {
+    width: 33.3333333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-5 {
+    width: 41.6666666667%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-7 {
+    width: 58.3333333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-8 {
+    width: 66.6666666667%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-9 {
+    width: 75%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-10 {
+    width: 83.3333333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-11 {
+    width: 91.6666666667%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col-sm-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .row-sm-pjl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+  .col-sm-pjl-1 {
+    width: 8.3333333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-2 {
+    width: 16.6666666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-3 {
+    width: 25%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-4 {
+    width: 33.3333333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-5 {
+    width: 41.6666666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-6 {
+    width: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-7 {
+    width: 58.3333333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-8 {
+    width: 66.6666666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-9 {
+    width: 75%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-10 {
+    width: 83.3333333333%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-11 {
+    width: 91.6666666667%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .col-sm-pjl-12 {
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .column-sm-gap-16 {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  .no-margin-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .no-padding-col-sm-12 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    padding: 0 12px;
+  }
+  .container-story {
+    padding: 0 12px;
+  }
+  .banner-bg {
+    padding: 87px 0;
+    margin-bottom: 32px;
+  }
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.intro {
+  margin-bottom: 48px;
+  padding: 32px;
+  background-color: #f5fee7;
+  text-align: center;
+}
+
+.introduction-img {
+  margin-left: -110px;
+  margin-right: -110px;
+  margin-bottom: 24px;
+}
+
+.course {
+  padding-left: 40px;
+  text-indent: -2em;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.register-img {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 4px;
+}
+.register-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 80px;
+  border-radius: 4px;
+}
+
+.index-banner {
+  padding: 289px 0 289px 200px;
+  color: #ffffff;
+}
+.index-banner-img {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hot {
+  position: absolute;
+  max-width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #f5fee7;
+  color: #57a203;
+  padding: 8px 12px;
+}
+
+.index-banner-co {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+.index-banner-co-img {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 48px 0;
+}
+.index-banner-co span {
+  margin: 0 24px;
+}
+.index-banner-co .star-img {
+  margin-top: -32px;
+  padding-right: 32px;
+}
+.index-banner-co .sparkle-img {
+  display: flex;
+  align-items: flex-end;
+  margin-left: -32px;
+  margin-bottom: 32px;
+}
+
+.idea {
+  margin-top: 64px;
+  margin-bottom: 112px;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+}
+.breadcrumb-item:not(:last-child)::after {
+  margin: 0 12px;
+  content: "/";
+  color: #dee2e6;
+}
+
+.btn {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #ffffff;
+  background-color: #212529;
+  padding: 12px 24px;
+}
+.btn-dark:hover {
+  background-color: #495057;
+}
+
+.btn-primary {
+  color: #212529;
+  padding: 12px 24px;
+  background-color: #c0fa73;
+}
+.btn-primary:hover {
+  background-color: #57a203;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn-hover-primary-400:hover {
+  color: #57a203;
+}
+
+.btn-hover-primary-500:hover {
+  color: #477a11;
+}
+
+.btn-person-icon {
+  padding: 12px;
+}
+
+.btn-size {
+  border: 1px solid #dee2e6;
+  padding: 12px 24px;
+  width: 160px;
+}
+.btn-size:hover {
+  border: 1px solid #6c757d;
+}
+.btn-size-active {
+  border: 1px solid #212529;
+}
+
+.btn-test {
+  display: block;
+  width: 100%;
+  border: 1px solid #212529;
+  padding: 12px 0;
+}
+.btn-test i {
+  margin-right: 2px;
+}
+
+.btn-like {
+  width: 100%;
+  border: 1px solid #212529;
+  padding: 12px 0;
+}
+.btn-like i {
+  margin-right: 2px;
+}
+.btn-like:hover {
+  background-color: #212529;
+  color: #ffffff;
+}
+.btn-like:hover i {
+  color: #ffffff;
+}
+.btn-like:active {
+  background-color: transparent;
+  color: #212529;
+}
+.btn-like:active i {
+  color: #212529;
+}
+
+.btn-page {
+  color: #212529;
+  width: 40px;
+  height: 40px;
+}
+.btn-page:hover {
+  background-color: #f8f9fa;
+}
+.btn-page:active {
+  background-color: #c0fa73;
+}
+
+.btn-check-icon {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #c0fa73;
+  border-radius: 1000px;
+  margin-right: 16px;
+}
+.btn-check-icon i {
+  color: #477a11;
+  font-size: 24px;
+}
+
+.btn-truck-icon {
+  padding-right: 12px;
+}
+.btn-truck-icon i {
+  color: #57a203;
+  font-size: 24px;
+}
+
+.active {
+  background-color: #c0fa73;
+}
+
+.btn-arrow-right {
+  width: 20px;
+  height: 20px;
+}
+
+.bg-index-set {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-primary-200 {
+  background-color: #e8fec5;
+}
+
+.bg-primary-100 {
+  background-color: #f5fee7;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.border-bottom-primary {
+  border-bottom: 1px solid #57a203;
+}
+
+.border-bottom-neutral {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.border-top-neutral {
+  border-top: 1px solid #dee2e6;
+}
+
+.border-neutral {
+  border: 1px solid #dee2e6;
+}
+
+.border-left-3 {
+  padding-left: 12px;
+  border-left: 3px solid #dee2e6;
+}
+
+.register-border-bottom-neutral-3 {
+  border-bottom: 2px solid #dee2e6;
+}
+
+.register-border-bottom-neutral-9 {
+  border-bottom: 2px solid #212529;
+}
+
+@media (max-width: 1400px) {
+  .idea img {
+    width: 300px;
+    height: 300px;
+    min-width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .introduction-img {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  .intro {
+    margin-bottom: 32px;
+    padding: 24px;
+    text-align: left;
+  }
+  .register-img {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-sm.png?raw=true");
+    background-position: top;
+    max-width: 100%;
+    height: 20vh;
+    border-radius: 0px;
+  }
+  .register-bg {
+    background-image: unset;
+    background-color: #ffffff;
+    padding: 32px 0;
+    border-radius: 0px;
+  }
+  .btn-py-816 {
+    padding: 8px 16px;
+  }
+  .carousel-sm-img {
+    max-width: 300px;
+    height: 300px;
+    min-width: auto;
+  }
+  .carousel-sm-box {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+  .btn-check-icon {
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+  }
+  .btn-check-icon i {
+    font-size: 20px;
+  }
+  .index-banner {
+    padding: 155px 24px;
+  }
+  .index-banner-img {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .index-banner-co {
+    padding: 64px 12px;
+  }
+  .index-banner-co span {
+    display: block;
+    margin: 8px 0;
+  }
+  .index-banner-co .star-img {
+    padding-right: 0px;
+    margin-left: -42px;
+  }
+  .index-banner-co .sparkle-img {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: -72px;
+    justify-content: flex-end;
+  }
+}/*# sourceMappingURL=all.css.map */

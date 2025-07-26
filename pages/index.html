@@ -4,13 +4,316 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <link rel="stylesheet" href="all.css" />
+    <title>首頁</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <ul class="d-none d-sm-flex align-center nav-list">
+      <li class="d-flex justify-center py-12 w-50 bg-primary-200">
+        <a href="product.html" class="fw-500 text-primay">商品列表</a>
+      </li>
+      <li class="d-flex justify-center py-12 w-50 bg-primary-100">
+        <a href="story.html" class="fw-500 text-primay">品牌故事</a>
+      </li>
+    </ul>
+    <main>
+      <div class="index-banner-img">
+        <div class="index-banner">
+          <p class="mb-16 fz-64 fw-700 fz-sm-48">URBNSTEP</p>
+          <p class="h3 fw-700 mb-48 fz-sm-20">Your Step, Your Statement</p>
+          <button class="btn btn-primary radius-sm fw-500">立即選購</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-64">
+          <div class="col-12">
+            <p class="fz-48 fw-700 mb-12 text-align-center h-sm2">
+              New Arrival
+            </p>
+            <p class="h2 h-sm4 fw-700 mt-12 mb-32 text-align-center">
+              新品上市
+            </p>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-1.png?raw=true"
+                alt="new-1"
+                class="mb-12 mb-sm-8"
+              />
+              <h5 class="h5 fw-700 lh-12 text-primay mb-4 h-sm6">Monoverse</h5>
+              <p class="fw-500 text-primay">NT$3,600</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-2.png?raw=true"
+                alt="new-2"
+                class="mb-12 mb-sm-8"
+              />
+              <h5 class="h5 fw-700 lh-12 text-primay mb-4 h-sm6">
+                PLATFORM 404
+              </h5>
+              <p class="fw-500 text-primay">NT$2,600</p>
+            </a>
+          </div>
+          <div class="col-6 mt-40 mb-64">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-3.png?raw=true"
+                alt="new-3"
+                class="mb-12 mb-sm-8"
+              />
+              <h5 class="h5 fw-700 lh-12 text-primay mb-4 h-sm6">URBN Force</h5>
+              <p class="fw-500 text-primay">NT$3,200</p>
+            </a>
+          </div>
+          <div class="col-6 mt-40 mb-64">
+            <a href="#">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-4.png?raw=true"
+                alt="new-4"
+                class="mb-12 mb-sm-8"
+              />
+              <h5 class="h5 fw-700 lh-12 text-primay mb-4 h-sm6">Mode90</h5>
+              <p class="fw-500 text-primay">NT$4,000</p>
+            </a>
+          </div>
+        </div>
+        <h4 class="h2 mt-64 mb-21 fw-700 h-sm4">熱銷補貨</h4>
+        <ul class="row carousel-sm-box">
+          <li class="col-3 mb-64 d-sm-contents">
+            <a href="#">
+              <div class="position-relative">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
+                  alt="product2"
+                  class="mb-12 carousel-sm-img"
+                />
+                <div class="hot fw-500 fz-14">
+                  <p>人氣No.1</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-3 mb-64 d-sm-contents">
+            <a href="#">
+              <div class="position-relative">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
+                  alt="product3"
+                  class="mb-12 carousel-sm-img"
+                />
+                <div class="hot fw-500 fz-14">
+                  <p>人氣No.1</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-3 mb-64 d-sm-contents">
+            <a href="#"
+              ><div class="position-relative">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
+                  alt="product4"
+                  class="mb-12 carousel-sm-img"
+                />
+                <div class="hot fw-500 fz-14">
+                  <p>人氣No.1</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-3 mb-64 d-sm-contents">
+            <a href="#"
+              ><div class="position-relative">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
+                  alt="product7"
+                  class="mb-12 carousel-sm-img"
+                />
+                <div class="hot fw-500 fz-14">
+                  <p>人氣No.1</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="index-banner-co-img overflow-md-hidden">
+        <div class="index-banner-co">
+          <div class="star-img">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/star.svg"
+              alt="star"
+            />
+          </div>
+          <div class="text-align-center">
+            <p class="mb-16 fw-700 lh-12 h-sm2 mb-sm-16 fz-48">
+              URBNSTEP<span class="text-highlight-3 h-sm3">x</span>Kevin Chen
+            </p>
+            <p class="mb-32 fw-700 h-sm5 mb-sm-24 h2">跨界聯名，限量發售</p>
+            <p class="mb-48 fz-20 text-muted d-sm-none">
+              新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！
+            </p>
+            <p class="mb-sm-4 text-muted fz-sm-16 d-sm-block d-none">
+              新銳漫畫家 Kevin Chen 親自操刀設計
+            </p>
+            <p class="mb-sm-32 text-muted fz-sm-16 d-sm-block d-none">
+              街頭能量全面引爆！
+            </p>
+            <button class="btn btn-primary radius-sm fw-500">立即搶購</button>
+          </div>
+          <div class="sparkle-img">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/6d666caf369e2de99b649ce9fc967d13e36f30b5/2025-week3-4/sparkle.svg"
+              alt="sparkle"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="h2 pt-64 mb-16 fw-700">依系列選購</p>
+        <ul class="row">
+          <li class="col-3 col-sm-6 mb-64">
+            <div class="w-100 position-relative">
+              <a href="#">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
+                  alt="product2"
+                />
+                <div
+                  class="d-flex align-center justify-center flex-column position-absolute w-100 h-100 t-0 bg-index-set text-white"
+                >
+                  <p class="h3 fw-700 mb-8 h-md5 h-sm6">URBN RUNNER</p>
+                  <p class="h4 fw-700 h-md5 h-sm6">慢跑系列</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="col-3 col-sm-6 mb-64">
+            <div class="w-100 position-relative">
+              <a href="#">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/product-11.png?raw=true"
+                  alt="product11"
+                />
+                <div
+                  class="d-flex align-center justify-center flex-column position-absolute w-100 h-100 t-0 bg-index-set text-white"
+                >
+                  <p class="h3 fw-700 mb-8 h-md5 h-sm6">STREETMODE</p>
+                  <p class="h4 fw-700 h-md5 h-sm6">滑板系列</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="col-3 col-sm-6 mb-64">
+            <div class="w-100 position-relative">
+              <a href="#">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
+                  alt="product4"
+                />
+                <div
+                  class="d-flex align-center justify-center flex-column position-absolute w-100 h-100 t-0 bg-index-set text-white"
+                >
+                  <p class="h3 fw-700 mb-8 h-md5 h-sm6">CHUNK DISTRICT</p>
+                  <p class="h4 fw-700 h-md5 h-sm6">厚底系列</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="col-3 col-sm-6 mb-64">
+            <div class="w-100 position-relative">
+              <a href="#">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
+                  alt="product7"
+                />
+                <div
+                  class="d-flex align-center justify-center flex-column position-absolute w-100 h-100 t-0 bg-index-set text-white"
+                >
+                  <p class="h3 fw-700 mb-8 h-md5 h-sm6">COLLAB ZONE</p>
+                  <p class="h4 fw-700 h-md5 h-sm6">聯名企劃</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/dog.jpg" style="width: 300px;" alt="cat">
+      <div class="container idea">
+        <p class="h2 fw-700 mb-16">穿搭靈感</p>
+        <div class="d-flex column-gap-8 overflow-md-auto column-md-gap-16">
+          <div class="d-flex flex-column row-gap-8 w-66 d-md-contents">
+            <div class="d-flex flex-grow-1 column-gap-8 d-md-contents">
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img1.png?raw=true"
+                alt="穿搭1"
+              />
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-2.png?raw=true"
+                alt="穿搭2"
+              />
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-3.png?raw=true"
+                alt="穿搭3"
+              />
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-4.png?raw=true"
+                alt="穿搭4"
+              />
+            </div>
+            <div class="d-flex column-gap-8 d-md-contents">
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-6.png?raw=true"
+                alt="穿搭5"
+              />
+              <div class="d-flex flex-column row-gap-8 d-md-contents">
+                <div class="d-flex column-gap-8 d-md-contents">
+                  <img
+                    src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-7.png?raw=true"
+                    alt="穿搭7"
+                  />
+                  <img
+                    src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-8.png?raw=true"
+                    alt="穿搭8"
+                  />
+                </div>
+                <div class="d-flex column-gap-8 d-md-contents">
+                  <img
+                    src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-9.png?raw=true"
+                    alt="穿搭9"
+                  />
+                  <img
+                    src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-10.png?raw=true"
+                    alt="穿搭6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column row-gap-8 w-33 d-md-contents">
+            <img
+              src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-5.png?raw=true"
+              alt="穿搭10"
+            />
+            <div class="d-flex column-gap-8 d-md-contents">
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-11.png?raw=true"
+                alt="穿搭11"
+              />
+              <img
+                src="https://github.com/0404kai/2025-layout-week1-img/blob/main/img-12.png?raw=true"
+                alt="穿搭12"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <%- include('./layout/footer'); -%>
 

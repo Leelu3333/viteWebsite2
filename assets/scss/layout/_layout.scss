@@ -1,0 +1,126 @@
+// 格線
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12 * $i);
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.column-gap-8 {
+  column-gap: 8px;
+}
+.row-gap-8 {
+  row-gap: 8px;
+}
+// 產品列表頁-右側產品列表-格線
+.productdetails-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+}
+@for $i from 1 through 12 {
+  .productdetails-col-#{$i} {
+    width: calc(100% / 12 * $i);
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px;
+  &-story {
+    // 品牌故事頁
+    margin: 0 auto;
+    max-width: 1076px;
+    padding: 0 110px;
+  }
+}
+.banner {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &-bg {
+    background-color: #00000066;
+    padding: 151px 0;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+}
+.footer {
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
+  &-bg {
+    background-color: $neutral-100;
+  }
+}
+@media (max-width: 1400px) {
+  .column-md-gap-16 {
+    column-gap: 16px;
+  }
+}
+@media (max-width: 768px) {
+  // 手機版-格線
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: calc(100% / 12 * $i);
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+  // 手機版-格線-產品列表頁-左側產品名稱列表
+  .row-sm-pjl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px;
+  }
+  @for $i from 1 through 12 {
+    .col-sm-pjl-#{$i} {
+      width: calc(100% / 12 * $i);
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  // 手機板-產品詳情頁面-你可能也喜歡...
+  .column-sm-gap-16 {
+    column-gap: 16px;
+  }
+  // 手機版-格線-產品詳情頁-產品圖片
+  .no-margin-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .no-padding-col-sm-12 {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    padding: 0 12px;
+    &-story {
+      // 手機版-品牌故事頁
+      padding: 0 12px;
+    }
+  }
+  .banner-bg {
+    padding: 87px 0;
+    margin-bottom: 32px;
+  }
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

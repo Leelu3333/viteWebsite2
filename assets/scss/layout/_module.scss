@@ -1,0 +1,378 @@
+// 品牌故事介紹
+.intro {
+  margin-bottom: 48px;
+  padding: 32px;
+  background-color: $primary-100;
+  text-align: center;
+}
+// 品牌故事照片
+.introduction-img {
+  margin-left: -110px;
+  margin-right: -110px;
+  margin-bottom: 24px;
+}
+// 品牌故事頁-品牌歷程區塊
+.course {
+  padding-left: 40px;
+  text-indent: -2em;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+// 註冊登入區塊背景
+.register {
+  &-img {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border-radius: 4px;
+  }
+  &-bg {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 80px;
+    border-radius: 4px;
+  }
+}
+
+// 首頁banner
+.index-banner {
+  padding: 289px 0 289px 200px;
+  color: #ffffff;
+  &-img {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+// 首頁人氣商品標誌
+.hot {
+  position: absolute;
+  max-width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: $primary-100;
+  color: $primary-400;
+  padding: 8px 12px;
+}
+
+// 首頁banner-co
+
+.index-banner-co {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  &-img {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 48px 0;
+  }
+  span {
+    margin: 0 24px;
+  }
+  .star-img {
+    margin-top: -32px;
+    padding-right: 32px;
+  }
+  .sparkle-img {
+    display: flex;
+    align-items: flex-end;
+    margin-left: -32px;
+    margin-bottom: 32px;
+  }
+}
+
+.idea {
+  margin-top: 64px;
+  margin-bottom: 112px;
+}
+
+// 漢堡屑
+.breadcrumb-item {
+  display: inline-block;
+  &:not(:last-child)::after {
+    margin: 0 12px;
+    content: '/';
+    color: $neutral-300;
+  }
+}
+
+// 按鈕
+.btn {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+// 按鈕黑底
+.btn-dark {
+  color: #ffffff;
+  background-color: $neutral-900;
+  padding: 12px 24px;
+  &:hover {
+    background-color: $neutral-700;
+  }
+}
+.btn-primary {
+  color: $neutral-900;
+  padding: 12px 24px;
+  background-color: $primary-300;
+  &:hover {
+    background-color: $primary-400;
+  }
+}
+// 禁用按鈕
+.btn:disabled {
+  pointer-events: none;
+}
+// 文字hover效果
+.btn-hover-primary-400 {
+  &:hover {
+    color: $primary-400;
+  }
+}
+.btn-hover-primary-500 {
+  &:hover {
+    color: $primary-500;
+  }
+}
+//nav-person-icon
+.btn-person-icon {
+  padding: 12px;
+}
+// 商品詳情頁面-尺寸按鈕
+.btn-size {
+  border: 1px solid $neutral-300;
+  padding: 12px 24px;
+  width: 160px;
+  &:hover {
+    border: 1px solid $neutral-600;
+  }
+  &-active {
+    border: 1px solid $neutral-900;
+  }
+}
+// 商品詳情頁面-預約試穿按鈕
+.btn-test {
+  display: block;
+  width: 100%;
+  border: 1px solid $neutral-900;
+  padding: 12px 0;
+  i {
+    margin-right: 2px;
+  }
+}
+// 商品詳情頁面-加入收藏按鈕
+.btn-like {
+  width: 100%;
+  border: 1px solid $neutral-900;
+  padding: 12px 0;
+  i {
+    margin-right: 2px;
+  }
+  &:hover {
+    background-color: $neutral-900;
+    color: #ffffff;
+    i {
+      color: #ffffff;
+    }
+  }
+  &:active {
+    background-color: transparent;
+    color: $neutral-900;
+    i {
+      color: $neutral-900;
+    }
+  }
+}
+// 商品列表頁-頁數按鈕
+.btn-page {
+  color: $neutral-900;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    background-color: $neutral-100;
+  }
+  &:active {
+    background-color: $primary-300;
+  }
+}
+//收藏頁面-check-icon
+.btn-check-icon {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-300;
+  border-radius: 1000px;
+  margin-right: 16px;
+  i {
+    color: $primary-500;
+    font-size: 24px;
+  }
+}
+//收藏頁面-truck-icon
+.btn-truck-icon {
+  padding-right: 12px;
+  i {
+    color: $primary-400;
+    font-size: 24px;
+  }
+}
+// btn-page中已選取
+.active {
+  background-color: $primary-300;
+}
+//品牌故事-品牌小故事icon
+.btn-arrow-right {
+  width: 20px;
+  height: 20px;
+}
+
+.bg-index-set {
+  background-color: #00000066;
+}
+
+// 加入會員區塊的背景
+.bg-primary-200 {
+  background-color: $primary-200;
+}
+// 我的收藏區塊的背景
+.bg-primary-100 {
+  background-color: $primary-100;
+}
+// 註冊方式的背景
+.bg-white {
+  background-color: #ffffff;
+}
+// 下底線顏色為primary
+.border-bottom-primary {
+  border-bottom: 1px solid $primary-400;
+}
+// 下底線顏色為neutral
+.border-bottom-neutral {
+  border-bottom: 1px solid $neutral-300;
+}
+// 上邊線顏色為neutral
+.border-top-neutral {
+  border-top: 1px solid $neutral-300;
+}
+// 邊線顏色為neutral
+.border-neutral {
+  border: 1px solid $neutral-300;
+}
+// 品牌故事-品牌理念-左邊線
+.border-left-3 {
+  padding-left: 12px;
+  border-left: 3px solid #dee2e6;
+}
+// 註冊-下邊線-淺
+.register-border-bottom-neutral-3 {
+  border-bottom: 2px solid $neutral-300;
+}
+// 註冊-下邊線-深
+.register-border-bottom-neutral-9 {
+  border-bottom: 2px solid $neutral-900;
+}
+@media (max-width: 1400px) {
+  .idea {
+    img {
+      width: 300px;
+      height: 300px;
+      min-width: auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  // 品牌故事頁-鞋子圖片
+  .introduction-img {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  // 品牌故介紹
+  .intro {
+    margin-bottom: 32px;
+    padding: 24px;
+    text-align: left;
+  }
+  // 登入註冊照片
+  .register {
+    &-img {
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-sm.png?raw=true');
+      background-position: top;
+      max-width: 100%;
+      height: 20vh;
+      border-radius: 0px;
+    }
+    &-bg {
+      background-image: unset;
+      background-color: #ffffff;
+      padding: 32px 0;
+      border-radius: 0px;
+    }
+  }
+  .btn-py-816 {
+    padding: 8px 16px;
+  }
+  // 手機板-輪播
+  .carousel-sm {
+    // 圖片
+    &-img {
+      max-width: 300px;
+      height: 300px;
+      min-width: auto;
+    }
+    // 區塊
+    &-box {
+      column-gap: 16px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-bottom: 40px;
+    }
+  }
+  //收藏頁面-check-icon
+  .btn-check-icon {
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    i {
+      font-size: 20px;
+    }
+  }
+  // 首頁-banner
+  .index-banner {
+    padding: 155px 24px;
+    &-img {
+      background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .index-banner-co {
+    padding: 64px 12px;
+    span {
+      display: block;
+      margin: 8px 0;
+    }
+    .star-img {
+      padding-right: 0px;
+      margin-left: -42px;
+    }
+    .sparkle-img {
+      margin-left: 0;
+      margin-bottom: 0;
+      margin-right: -72px;
+      justify-content: flex-end;
+    }
+  }
+}
